@@ -1,15 +1,10 @@
-"""Модуль с тестами API приложения Taski."""
-
+# backend/api/tests.py
 from http import HTTPStatus
 
+from api import models
 from django.test import Client, TestCase
 
-from api import models
-
-
 class TaskiAPITestCase(TestCase):
-    """Тесты для API приложения Taski."""
-
     def setUp(self):
         self.guest_client = Client()
 
