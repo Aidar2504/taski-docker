@@ -1,11 +1,15 @@
-#flake8: noqa
-# backend/api/tests.py
+"""Модуль с тестами API приложения Taski."""
+
 from http import HTTPStatus
 
-from api import models
 from django.test import Client, TestCase
 
+from api import models
+
+
 class TaskiAPITestCase(TestCase):
+    """Тесты для API приложения Taski."""
+
     def setUp(self):
         self.guest_client = Client()
 
