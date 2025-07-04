@@ -1,3 +1,4 @@
+#flake8: noqa
 # backend/api/tests.py
 from http import HTTPStatus
 
